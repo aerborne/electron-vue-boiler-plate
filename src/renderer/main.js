@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import axios from 'axios'
-import App from './App'
 import router from './router'
 import store from './store'
+import components from './export_comp.js'
 import 'vue2-admin-lte/src/lib/css'
 import 'vue2-admin-lte/src/lib/script'
 
@@ -12,7 +12,7 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  components: { App },
+  components,
   router,
   store,
   template: '<App/>'
